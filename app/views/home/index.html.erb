@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The G' Map</h1>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="maplatitude">Latitude</label>
+  <div class="col-md-4">
+  <input id="maplatitude" name="maplatitude" placeholder="Veuillez entrer une latitude !" class="form-control input-md" required="" type="text">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="maplongitude">Longitude :</label>
+  <div class="col-md-4">
+  <input id="maplongitude" name="maplongitude" placeholder="Veuillez entrer une longitude !" class="form-control input-md" required="" type="text">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="clientmessage">Votre message :</label>
+  <div class="col-md-4">
+  <input id="clientmessage" name="clientmessage" placeholder="Veuillez entrer votre message !" class="form-control input-md" required="" type="text">
+
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+    <button class="btn btn-success">Let's go</button>
+</div>
+
+</fieldset>
+</form>
+
+<div id="googleMap" style="width:75%;height:400px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=
+<%=ENV['GMAP_API_KEY']%>&callback=myMap"></script>
+
+</body>
+</html>

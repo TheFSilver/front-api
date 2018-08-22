@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FrontApi</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta property="og:title" content="Front API" />
+    <meta property="og:url" content="https://thefsilver-api.herokuapp.com/" />
+    <meta property="og:description" content="Juste un petit jeu avec l'api Google Maps" />
+    <meta property="og:image" content="<%= image_path 'thefsilverlogo.jpg' %>" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <center>
+    <%= yield %>
+    </center>
+  </body>
+</html>
