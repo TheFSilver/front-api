@@ -1,6 +1,6 @@
 # API GOOGLE MAPS
 
-Pour voir la version en ligne: https://thefsilver-api.herokuapp.com/
+J'ai retiré la version en ligne, vous risquez d'abuser de la marge offerte par Google sur ma CB...
 
 Pour faire joujou avec le repo:
 ```
